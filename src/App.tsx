@@ -1,4 +1,4 @@
-import Items from "./Components/Pages/Items";
+import ItemsPage from "./Components/Pages/ItemsPage";
 import Root from "./Components/Root";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { QueryClient, QueryClientProvider } from "react-query";
@@ -11,7 +11,7 @@ const router = createBrowserRouter([{
   children: [
     {
       path: "/Items",
-      element: <Items />
+      element: <ItemsPage />
     },
     {
       index: true,
